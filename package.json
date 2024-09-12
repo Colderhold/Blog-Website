@@ -1,12 +1,15 @@
 {
   "name": "ejs-challenge",
   "version": "1.0.0",
-  "description": "",
+  "description": "A Node.js application using Express, EJS, and Mongoose.",
   "main": "app.js",
   "engines": {
-    "node": "18.x"
+    "node": "20.x"
   },
   "scripts": {
+    "start": "node app.js",
+    "prestart": "echo 'Preparing to start the app...'",
+    "postinstall": "echo 'Dependencies installed!'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -18,5 +21,13 @@
     "express": "^4.16.3",
     "lodash": "^4.17.11",
     "mongoose": "^5.13.22"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/ejs-challenge.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/ejs-challenge/issues"
+  },
+  "homepage": "https://yourusername.github.io/ejs-challenge/"
 }

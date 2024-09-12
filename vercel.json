@@ -1,5 +1,16 @@
 {
     "version": 2,
-    "builds": [{ "src": "./app.js", "use": "@vercel/node"} ],
-    "routes": [{ "src": "/(.*)", "dest": "/"} ]
+    "builds": [
+        { "src": "./app.js", "use": "@vercel/node" }
+    ],
+    "routes": [
+        { "src": "/(.*)", "dest": "/" },
+        { "src": "/old-path", "dest": "/new-path", "status": 301 }
+    ],
+    "env": {
+        "MONGO_USER": "@mongo_user",
+        "MONGO_PASS": "@mongo_pass",
+        "MONGO_CLUSTER": "@mongo_cluster",
+        "MONGO_DB": "@mongo_db"
+    }
 }
